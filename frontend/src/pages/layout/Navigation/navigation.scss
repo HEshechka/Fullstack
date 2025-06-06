@@ -1,0 +1,108 @@
+.main-navigation {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 0.5rem 1rem;
+	transition: all 0.3s ease;
+
+	.container-fluid  {
+		max-width: 1200px;
+	}
+
+	.navbar-brand {
+		font-weight: 600;
+		color: #2c3e50;
+		position: relative;
+
+		&:hover {
+			color: #1a252f;
+		}
+	}
+
+	.nav-link {
+		color: #495057;
+		font-weight: 500;
+		padding: 0.5rem 1rem;
+		position: relative;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: #2c3e50;
+			transform: translateY(-2px);
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			background-color: #2c3e50;
+			transition: width 0.3s ease;
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+	}
+
+	.navbar-text.user-greeting {
+		color: #2c3e50;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: #1a252f;
+			transform: scale(1.05);
+		}
+	}
+
+	.logout-btn {
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: #dc3545;
+			color: white;
+			transform: scale(1.05);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		&:active {
+			transform: scale(0.98);
+		}
+	}
+
+	.navbar-toggler {
+		transition: all 0.3s ease;
+
+		&:hover {
+			transform: rotate(90deg);
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	@media (max-width: 992px) {
+		.navbar-collapse {
+			padding-top: 1rem;
+		}
+
+		.d-flex {
+			padding: 1rem 0;
+			flex-direction: column;
+			align-items: flex-start;
+
+			.navbar-text {
+				margin-bottom: 1rem;
+				margin-right: 0 !important;
+			}
+		}
+	}
+}
+
+// Общий класс для hover эффектов
+.hover-effect {
+	transition: all 0.3s ease;
+
+	&:hover {
+		transform: translateY(-2px);
+		opacity: 0.9;
+	}
+}

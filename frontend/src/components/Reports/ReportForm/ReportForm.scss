@@ -1,0 +1,130 @@
+.rf-container {
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	.rf-header {
+		text-align: center;
+		margin-bottom: 2rem;
+		color: #2c3e50;
+		font-size: 1.8rem;
+		font-weight: 600;
+	}
+
+	.rf-form {
+		.rf-form-group {
+			margin-bottom: 1.5rem;
+
+			label {
+				display: block;
+				margin-bottom: 0.5rem;
+				color: #495057;
+				font-weight: 500;
+				font-size: 0.95rem;
+			}
+
+			select, input {
+				width: 100%;
+				padding: 0.75rem;
+				border: 1px solid #ced4da;
+				border-radius: 6px;
+				font-size: 1rem;
+				transition: border-color 0.3s;
+
+				&:focus {
+					outline: none;
+					border-color: #4dabf7;
+					box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+				}
+			}
+		}
+
+		.rf-submit-btn {
+			width: 100%;
+			padding: 0.8rem;
+			background: #4dabf7;
+			color: white;
+			border: none;
+			border-radius: 6px;
+			font-size: 1rem;
+			font-weight: 500;
+			cursor: pointer;
+			transition: background-color 0.2s;
+
+			&:hover {
+				background: #339af0;
+			}
+
+			&:disabled {
+				background: #adb5bd;
+				cursor: not-allowed;
+			}
+		}
+	}
+
+	.rf-report-results {
+		margin-top: 2rem;
+		background: #f8f9fa;
+		border-radius: 8px;
+		padding: 1.5rem;
+
+		h3 {
+			margin-top: 0;
+			color: #2c3e50;
+		}
+
+		.rf-report-data {
+			background: white;
+			border-radius: 6px;
+			padding: 1rem;
+			border: 1px solid #e9ecef;
+			max-height: 400px;
+			overflow-y: auto;
+			margin-bottom: 1rem;
+
+			pre {
+				margin: 0;
+				white-space: pre-wrap;
+				font-family: 'Consolas', monospace;
+				color: #343a40;
+			}
+		}
+
+		.rf-download-btn {
+			padding: 0.6rem 1.2rem;
+			background: #40c057;
+			color: white;
+			border: none;
+			border-radius: 6px;
+			cursor: pointer;
+			transition: background-color 0.2s;
+
+			&:hover {
+				background: #37b24d;
+			}
+		}
+	}
+
+	.rf-message {
+		padding: 1rem;
+		text-align: center;
+		border-radius: 6px;
+		margin-bottom: 1rem;
+
+		&.rf-error {
+			background: #fff5f5;
+			color: #fa5252;
+			border: 1px solid #ffd3d3;
+		}
+
+		&.rf-success {
+			background: #ebfbee;
+			color: #40c057;
+			border: 1px solid #d3f9d8;
+		}
+	}
+}

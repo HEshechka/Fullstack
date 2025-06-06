@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import './styles/main.scss';
+import App from '../src/App.jsx';
 import { AuthProvider } from './contexts/auth/AuthContext.jsx'; // Импортируем провайдер
 import { BrowserRouter as Router } from 'react-router-dom'; // Импортируем Router
 

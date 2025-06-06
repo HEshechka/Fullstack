@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8080/api/users'; // Замените на URL вашего бэкенда
+const API_BASE_URL = 'http://localhost:8091/api/users'; // Замените на URL вашего бэкенда
 
 export const loginUser = async (email, password) => {
     try {
@@ -28,7 +28,7 @@ export const registerUser = async (userData) => {
 // Возможно, потребуется функция для проверки токена или получения информации о текущем пользователе
 export const getCurrentUser = async (token) => {
     try {
-        const response = await axios.get(`${API_BASE_URL}/users/me`, { // Пример эндпоинта
+        const response = await axios.get(`${API_BASE_URL}/me`, { // Пример эндпоинта
             headers: {
                 Authorization: `Bearer ${token}`,
             },

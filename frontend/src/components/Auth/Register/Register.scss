@@ -1,0 +1,56 @@
+.register-container {
+	.name-fields {
+		.name-input {
+			padding: 12px 15px;
+			border-radius: 6px;
+			transition: all 0.3s ease;
+
+			&:focus {
+				border-color: #4dabf7;
+				box-shadow: 0 0 0 0.25rem rgba(77, 171, 247, 0.25);
+				z-index: 2;
+			}
+
+			&:first-child {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+
+			&:last-child {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+	}
+
+	// Остальные стили остаются без изменений
+	.register-title {
+		color: #2c3e50;
+		font-weight: 700;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.register-subtitle {
+		color: #7f8c8d;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.login-link-text {
+		color: #6c757d;
+		font-size: 0.9rem;
+	}
+
+	.login-link {
+		color: #3498db;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		font-weight: 500;
+
+		&:hover {
+			color: #2980b9;
+			text-decoration: underline;
+		}
+	}
+}
